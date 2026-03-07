@@ -1,0 +1,6 @@
+tesseract-ocr
+tesseract-ocr-spa
+tesseract-ocr-fra
+tesseract-ocr-deu
+libtesseract-dev
+poppler-utils
