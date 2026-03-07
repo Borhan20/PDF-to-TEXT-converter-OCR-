@@ -25,8 +25,10 @@
 
 ### 4.2 OCR Engine Integration
 *   **Engine:** Continued use of Tesseract OCR (via `pytesseract`).
+*   **System Check:** The application must verify Tesseract is installed on startup and provide installation instructions if missing.
 *   **Language Support:** A dropdown menu to select the document language (e.g., English, Spanish, French, German) to improve OCR accuracy.
 *   **Batch vs. Page:** Support for processing a single page (current view) or the entire document in the background.
+*   **Text Layer Extraction:** Allow instant extraction of existing searchable text without running full OCR.
 
 ### 4.3 State Management
 *   **Client-Side Strategy:** Utilize browser-based persistence (via Streamlit session state or local storage mechanisms) to ensure that refreshes do not clear the current work-in-progress.

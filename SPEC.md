@@ -103,13 +103,15 @@ As per requirements, no persistent disk storage is used. All data resides in the
 *   Expose language selection dropdown (mapped to Tesseract codes).
 *   Add "Run OCR" button that triggers `OCREngine.process_page()`.
 *   Implement batch processing for "All Pages" with a progress bar.
+*   Add "Extract Existing Text Layer" option for instant text extraction from searchable PDFs.
 
 ### Milestone 4: Persistence & State Management
 *   Sync all UI inputs (text areas, navigation) with `st.session_state`.
 *   Ensure refreshes reload data from the current session object.
 *   Add "Download .txt" button using `st.download_button`.
 
-### Milestone 5: Dockerization & Performance
+### Milestone 5: Dockerization, Performance & System Checks
+*   Add a system startup check (`shutil.which("tesseract")`) with helpful error messaging.
 *   Update `Dockerfile` to include Tesseract-OCR and language packs.
 *   Optimize image rendering performance (DPI tuning).
 *   Add error handling for OCR failures and invalid PDF structures.
