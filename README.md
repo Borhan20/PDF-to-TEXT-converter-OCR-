@@ -1,41 +1,61 @@
 # 📄 OCR PDF-to-Text Web Service
+
+[![Spec-Driven Development](https://img.shields.io/badge/Development-Spec--Driven-blue.svg)](#)
+[![AI Assisted](https://img.shields.io/badge/Built%20with-Gemini%20CLI%20%7C%20Claude%20Code-orange.svg)](#)
+
 TDD spec driven developement through code agent like gemini cli. Follwed the new vive archtecture.
-An interactive web application built with **Streamlit** to convert scanned PDF documents into plain text using **Tesseract OCR**. Features a side-by-side verification viewer and support for multiple languages.
+
+>>>>>>> 174e3f1a3ed093c1032da73cf477ce02aa23085e
+>>>>>>> An interactive web application built with **Streamlit** to convert scanned PDF documents into plain text using **Tesseract OCR**. Features a side-by-side verification viewer and support for multiple languages.
+>>>>>>>
+>>>>>>
+>>>>>
+>>>>
+>>>
+>>
+
+## 🤖 Built with Modern AI Coding Agents
+
+This project is a showcase of **modern spec-driven development**, built entirely using advanced AI coding agents including **Gemini CLI** and **Claude Code**. By leveraging an AI-first workflow and rigorous markdown-based specifications, this repository demonstrates how modern coding agents can intelligently scaffold, implement, test, and rapidly iterate on full-stack applications.
 
 ## ✨ Features
 
--   **Interactive Web UI**: Drag-and-drop PDF upload with real-time feedback.
--   **Side-by-Side Viewer**: View the original PDF page next to the editable OCR result.
--   **Batch Processing**: Run OCR for all pages at once or on a page-by-page basis.
--   **Multi-Language Support**: Optimized for English, Spanish, French, and German.
--   **Text Layer Extraction**: Instantly extract text from searchable PDFs without full OCR.
--   **Session Persistence**: Your work persists across browser refreshes (client-side state).
--   **Privacy-First**: No files are stored permanently on the server.
+- **Interactive Web UI**: Drag-and-drop PDF upload with real-time feedback.
+- **Side-by-Side Viewer**: View the original PDF page next to the editable OCR result.
+- **Batch Processing**: Run OCR for all pages at once or on a page-by-page basis.
+- **Multi-Language Support**: Optimized for English, Spanish, French, and German.
+- **Text Layer Extraction**: Instantly extract text from searchable PDFs without full OCR.
+- **Session Persistence**: Your work persists across browser refreshes (client-side state).
+- **Privacy-First**: No files are stored permanently on the server.
 
 ## 🛠️ System Dependencies
 
 Before running the application, ensure you have the following installed on your system:
 
 ### **Linux (Ubuntu/Debian)**
+
 ```bash
 sudo apt-get update
 sudo apt-get install tesseract-ocr tesseract-ocr-eng tesseract-ocr-spa tesseract-ocr-fra tesseract-ocr-deu poppler-utils
 ```
 
 ### **macOS**
+
 ```bash
 brew install tesseract poppler
 ```
 
 ### **Windows**
-1.  Download and install the **Tesseract OCR** installer from [UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki).
-2.  Add the Tesseract installation folder (usually `C:\Program Files\Tesseract-OCR`) to your system **PATH**.
+
+1. Download and install the **Tesseract OCR** installer from [UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki).
+2. Add the Tesseract installation folder (usually `C:\Program Files\Tesseract-OCR`) to your system **PATH**.
 
 ---
 
 ## 🚀 Setup & Usage
 
 ### 1. Local Environment
+
 Create a virtual environment and install the Python dependencies:
 
 ```bash
@@ -47,14 +67,19 @@ pip install .
 ```
 
 ### 2. Run the Web Application
+
 Launch the Streamlit app:
+
 ```bash
 streamlit run src/ocr_pdf_converter/app.py
 ```
+
 The app will open in your default browser at `http://localhost:8501`.
 
 ### 3. Run the CLI Tool (Legacy)
+
 The original CLI tool is still available for automated batch processing:
+
 ```bash
 ocr-pdf convert path/to/document.pdf --output result.txt
 ```
@@ -69,11 +94,12 @@ Build and run the application using Docker:
 docker build -t ocr-pdf-web .
 docker run -p 8501:8501 ocr-pdf-web
 ```
+
 Visit `http://localhost:8501` to use the application.
 
 ## 📁 Project Structure
 
--   `src/ocr_pdf_converter/app.py`: Streamlit web interface and session management.
--   `src/ocr_pdf_converter/ocr_engine.py`: Tesseract wrapper and text sanitization.
--   `src/ocr_pdf_converter/pdf_processor.py`: PDF rendering and text layer extraction.
--   `src/ocr_pdf_converter/cli.py`: Legacy Typer-based CLI interface.
+- `src/ocr_pdf_converter/app.py`: Streamlit web interface and session management.
+- `src/ocr_pdf_converter/ocr_engine.py`: Tesseract wrapper and text sanitization.
+- `src/ocr_pdf_converter/pdf_processor.py`: PDF rendering and text layer extraction.
+- `src/ocr_pdf_converter/cli.py`: Legacy Typer-based CLI interface.
