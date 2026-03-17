@@ -1,6 +1,12 @@
 # 📄 OCR PDF-to-Text Web Service
 
+[![Spec-Driven Development](https://img.shields.io/badge/Development-Spec--Driven-blue.svg)](#) 
+[![AI Assisted](https://img.shields.io/badge/Built%20with-Gemini%20CLI%20%7C%20Claude%20Code-orange.svg)](#)
+
 An interactive web application built with **Streamlit** to convert scanned PDF documents into plain text using **Tesseract OCR**. Features a side-by-side verification viewer and support for multiple languages.
+
+## 🤖 Built with Modern AI Coding Agents
+This project is a showcase of **modern spec-driven development**, built entirely using advanced AI coding agents including **Gemini CLI** and **Claude Code**. By leveraging an AI-first workflow and rigorous markdown-based specifications, this repository demonstrates how modern coding agents can intelligently scaffold, implement, test, and rapidly iterate on full-stack applications.
 
 ## ✨ Features
 
