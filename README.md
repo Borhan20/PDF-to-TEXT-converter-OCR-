@@ -1,5 +1,5 @@
 # 📄 OCR PDF-to-Text Web Service
-
+TDD spec driven developement through code agent like gemini cli. Follwed the new vive archtecture.
 An interactive web application built with **Streamlit** to convert scanned PDF documents into plain text using **Tesseract OCR**. Features a side-by-side verification viewer and support for multiple languages.
 
 ## ✨ Features
